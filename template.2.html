@@ -7,24 +7,33 @@
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
           $(function(){
-          $().click(function(){
+          $('#create').click(function(){
+              var name = $('#name').val();
+              var email= $('#email').val();
+              var age= $('#age').val();
+              
+          
               
           });
-        
-   
              });
         
     </script>
+ 
 </head>
 
 <body>
-    Name: <input type="text" name="name"/> <br>
+   
+    Name: <input id='name' type="text" name="name"/> <br>
      <br>
-   Email: <input type="Email" name= "DOB"/><br>
+   Email: <input id="email" type="Email" name= "DOB"/><br>
     <br>
-    Age:<input type="number" name= "age"/>
+    Age:<input id="age" type="number" name= "age"/>
     <br><br>
-    <input type="submit" name=""/>
+    <input id="create" type="submit"/>
+    <div>
+        
+        
+    </div>
 </body>
 
 </html>
