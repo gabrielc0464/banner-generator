@@ -7,6 +7,7 @@
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
           $(function(){
+              $('#banner').hide();
           $('#create').click(function(){
               var name = $('#name').val();
               var email= $('#email').val();
@@ -15,23 +16,25 @@
               $('h2').html(email);
               $('#banner').css('border-width', age + 'px');
              
-              
+              $('#banner').show(1);
           });
              });
         
     </script>
  <style>
-     #banner{
-         background-color: white ;
-         border:Solid ;
-     }
-     
-     
-     
+    #banner{
+        background-color: white;
+        border: solid;
+        
+        
+    }
  </style>
+      
+      
  
+       
      
- </style>
+ 
 </head>
 
 <body>
