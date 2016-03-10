@@ -11,14 +11,27 @@
               var name = $('#name').val();
               var email= $('#email').val();
               var age= $('#age').val();
-              
-          
+              $('h1').html(name);
+              $('h2').html(email);
+              $('#banner').css('border-width', age + 'px');
+             
               
           });
              });
         
     </script>
+ <style>
+     #banner{
+         background-color: white ;
+         border:Solid ;
+     }
+     
+     
+     
+ </style>
  
+     
+ </style>
 </head>
 
 <body>
@@ -31,7 +44,8 @@
     <br><br>
     <input id="create" type="submit"/>
     <div id="banner">
-        
+        <h1></h1>
+        <h2></h2>
         
     </div>
 </body>
