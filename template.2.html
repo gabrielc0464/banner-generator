@@ -6,23 +6,27 @@
     <title>jQuery Template</title>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
+    //This whole block of code activates when the submit button is clicked//
           $(function(){
               $('#banner').hide();
           $('#create').click(function(){
+              // This code takes the value of the things you type in//
               var name = $('#name').val();
               var email= $('#email').val();
               var age= $('#age').val();
+              //this code takes the values and puts them in the banner//
               $('h1').html(name);
               $('h2').html(email);
+              //this code creates the border-width with the age you typed in//
               $('#banner').css('border-width', age + 'px');
-             
-              $('#banner').show(1);
+              $('#banner').show(1);//this code hides the banner until the button is clicked.
           });
              });
         
     </script>
  <style>
     #banner{
+        /*base code of the banner*/
         background-color: white;
         border: solid;
         
@@ -44,10 +48,12 @@
    Email: <input id="email" type="Email" name= "DOB"/><br>
     <br>
     Age:<input id="age" type="number" name= "age"/>
+    
     <br><br>
     <input id="create" type="submit"/>
     <div id="banner">
-        <h1></h1>
+        <!--where the things you typed before end up-->
+        <h1></h1>  
         <h2></h2>
         
     </div>
